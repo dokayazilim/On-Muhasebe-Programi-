@@ -1,0 +1,1685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C86B2C42-6327-401E-8A00-2CF83EEBAE9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>onmuhasebe</RootNamespace>
+    <AssemblyName>onmuhasebe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alinancekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alinancekler.Designer.cs">
+      <DependentUpon>alinancekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alinansenet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alinansenet.Designer.cs">
+      <DependentUpon>alinansenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alinanteklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alinanteklif.Designer.cs">
+      <DependentUpon>alinanteklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alisfatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alisfatura.Designer.cs">
+      <DependentUpon>alisfatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alisirsaliye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alisirsaliye.Designer.cs">
+      <DependentUpon>alisirsaliye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alisislemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alisislemi.Designer.cs">
+      <DependentUpon>alisislemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carikayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carikayitlari.Designer.cs">
+      <DependentUpon>carikayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carilistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carilistesi.Designer.cs">
+      <DependentUpon>carilistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firmacarikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmacarikayit.Designer.cs">
+      <DependentUpon>firmacarikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmedefteriortakhesaplarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kayitlifirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitlifirma.Designer.cs">
+      <DependentUpon>kayitlifirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitlifirmadiger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitlifirmadiger.Designer.cs">
+      <DependentUpon>kayitlifirmadiger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitliurun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitliurun.Designer.cs">
+      <DependentUpon>kayitliurun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebealissatisDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebealissatisDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedataDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedataDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedigerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedigerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedigerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedigerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedigerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedigerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebedigerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebedigerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onmuhasebesmartdataDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onmuhasebesmartdataDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onumuhasebefirmadataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onumuhasebefirmadataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onumuhasebefirmadataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onumuhasebefirmadataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="onumuhasebefirmadataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onumuhasebefirmadataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satisfatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisfatura.Designer.cs">
+      <DependentUpon>satisfatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisirsaliye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisirsaliye.Designer.cs">
+      <DependentUpon>satisirsaliye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisislemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisislemi.Designer.cs">
+      <DependentUpon>satisislemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokalis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokalis.Designer.cs">
+      <DependentUpon>stokalis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokkaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokkaydi.Designer.cs">
+      <DependentUpon>stokkaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoklistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoklistesi.Designer.cs">
+      <DependentUpon>stoklistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="taksit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taksit.Designer.cs">
+      <DependentUpon>taksit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumcekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tumcekler.Designer.cs">
+      <DependentUpon>tumcekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumsenet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tumsenet.Designer.cs">
+      <DependentUpon>tumsenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumteklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tumteklif.Designer.cs">
+      <DependentUpon>tumteklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verilencekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verilencekler.Designer.cs">
+      <DependentUpon>verilencekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verilensenet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verilensenet.Designer.cs">
+      <DependentUpon>verilensenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verilenteklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verilenteklif.Designer.cs">
+      <DependentUpon>verilenteklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vs.Designer.cs">
+      <DependentUpon>vs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yedekalpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yedekalpc.Designer.cs">
+      <DependentUpon>yedekalpc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenibanka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenibanka.Designer.cs">
+      <DependentUpon>yenibanka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenicari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenicari.Designer.cs">
+      <DependentUpon>yenicari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenidefter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenidefter.Designer.cs">
+      <DependentUpon>yenidefter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenifirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenifirma.Designer.cs">
+      <DependentUpon>yenifirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenikasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenikasa.Designer.cs">
+      <DependentUpon>yenikasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenipersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenipersonel.Designer.cs">
+      <DependentUpon>yenipersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniurun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniurun.Designer.cs">
+      <DependentUpon>yeniurun.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alinancekler.resx">
+      <DependentUpon>alinancekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alinansenet.resx">
+      <DependentUpon>alinansenet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alinanteklif.resx">
+      <DependentUpon>alinanteklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alisfatura.resx">
+      <DependentUpon>alisfatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alisirsaliye.resx">
+      <DependentUpon>alisirsaliye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alisislemi.resx">
+      <DependentUpon>alisislemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carikayitlari.resx">
+      <DependentUpon>carikayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carilistesi.resx">
+      <DependentUpon>carilistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firmacarikayit.resx">
+      <DependentUpon>firmacarikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitlifirma.resx">
+      <DependentUpon>kayitlifirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitlifirmadiger.resx">
+      <DependentUpon>kayitlifirmadiger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitliurun.resx">
+      <DependentUpon>kayitliurun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="satisfatura.resx">
+      <DependentUpon>satisfatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisirsaliye.resx">
+      <DependentUpon>satisirsaliye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisislemi.resx">
+      <DependentUpon>satisislemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokalis.resx">
+      <DependentUpon>stokalis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokkaydi.resx">
+      <DependentUpon>stokkaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoklistesi.resx">
+      <DependentUpon>stoklistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taksit.resx">
+      <DependentUpon>taksit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumcekler.resx">
+      <DependentUpon>tumcekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumsenet.resx">
+      <DependentUpon>tumsenet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumteklif.resx">
+      <DependentUpon>tumteklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verilencekler.resx">
+      <DependentUpon>verilencekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verilensenet.resx">
+      <DependentUpon>verilensenet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verilenteklif.resx">
+      <DependentUpon>verilenteklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vs.resx">
+      <DependentUpon>vs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yedekalpc.resx">
+      <DependentUpon>yedekalpc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenibanka.resx">
+      <DependentUpon>yenibanka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenicari.resx">
+      <DependentUpon>yenicari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenidefter.resx">
+      <DependentUpon>yenidefter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenifirma.resx">
+      <DependentUpon>yenifirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenikasa.resx">
+      <DependentUpon>yenikasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenipersonel.resx">
+      <DependentUpon>yenipersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniurun.resx">
+      <DependentUpon>yeniurun.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="isletmedefteriortakhesaplarDataSet.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet1.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet2.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet3.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xsc">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmedefteriortakhesaplarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmedefteriortakhesaplarDataSet4.xss">
+      <DependentUpon>isletmedefteriortakhesaplarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet.xss">
+      <DependentUpon>onmuhasebealissatisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet1.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet1.xss">
+      <DependentUpon>onmuhasebealissatisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet2.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet2.xss">
+      <DependentUpon>onmuhasebealissatisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet3.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet3.xss">
+      <DependentUpon>onmuhasebealissatisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet4.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet4.xss">
+      <DependentUpon>onmuhasebealissatisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet5.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet5.xss">
+      <DependentUpon>onmuhasebealissatisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet6.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet6.xss">
+      <DependentUpon>onmuhasebealissatisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet7.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet7.xss">
+      <DependentUpon>onmuhasebealissatisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet8.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet8.xss">
+      <DependentUpon>onmuhasebealissatisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet9.xsc">
+      <DependentUpon>onmuhasebealissatisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebealissatisDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebealissatisDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebealissatisDataSet9.xss">
+      <DependentUpon>onmuhasebealissatisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet.xsc">
+      <DependentUpon>onmuhasebedataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet.xss">
+      <DependentUpon>onmuhasebedataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet1.xsc">
+      <DependentUpon>onmuhasebedataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet1.xss">
+      <DependentUpon>onmuhasebedataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet10.xsc">
+      <DependentUpon>onmuhasebedataDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet10.xss">
+      <DependentUpon>onmuhasebedataDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet11.xsc">
+      <DependentUpon>onmuhasebedataDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet11.xss">
+      <DependentUpon>onmuhasebedataDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet12.xsc">
+      <DependentUpon>onmuhasebedataDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet12.xss">
+      <DependentUpon>onmuhasebedataDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet13.xsc">
+      <DependentUpon>onmuhasebedataDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet13.xss">
+      <DependentUpon>onmuhasebedataDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet14.xsc">
+      <DependentUpon>onmuhasebedataDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet14.xss">
+      <DependentUpon>onmuhasebedataDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet15.xsc">
+      <DependentUpon>onmuhasebedataDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet15.xss">
+      <DependentUpon>onmuhasebedataDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet16.xsc">
+      <DependentUpon>onmuhasebedataDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet16.xss">
+      <DependentUpon>onmuhasebedataDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet17.xsc">
+      <DependentUpon>onmuhasebedataDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet17.xss">
+      <DependentUpon>onmuhasebedataDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet18.xsc">
+      <DependentUpon>onmuhasebedataDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet18.xss">
+      <DependentUpon>onmuhasebedataDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet19.xsc">
+      <DependentUpon>onmuhasebedataDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet19.xss">
+      <DependentUpon>onmuhasebedataDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet2.xsc">
+      <DependentUpon>onmuhasebedataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet2.xss">
+      <DependentUpon>onmuhasebedataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet20.xsc">
+      <DependentUpon>onmuhasebedataDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet20.xss">
+      <DependentUpon>onmuhasebedataDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet21.xsc">
+      <DependentUpon>onmuhasebedataDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet21.xss">
+      <DependentUpon>onmuhasebedataDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet22.xsc">
+      <DependentUpon>onmuhasebedataDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet22.xss">
+      <DependentUpon>onmuhasebedataDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet23.xsc">
+      <DependentUpon>onmuhasebedataDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet23.xss">
+      <DependentUpon>onmuhasebedataDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet24.xsc">
+      <DependentUpon>onmuhasebedataDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet24.xss">
+      <DependentUpon>onmuhasebedataDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet25.xsc">
+      <DependentUpon>onmuhasebedataDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet25.xss">
+      <DependentUpon>onmuhasebedataDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet3.xsc">
+      <DependentUpon>onmuhasebedataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet3.xss">
+      <DependentUpon>onmuhasebedataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet4.xsc">
+      <DependentUpon>onmuhasebedataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet4.xss">
+      <DependentUpon>onmuhasebedataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet5.xsc">
+      <DependentUpon>onmuhasebedataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet5.xss">
+      <DependentUpon>onmuhasebedataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet6.xsc">
+      <DependentUpon>onmuhasebedataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet6.xss">
+      <DependentUpon>onmuhasebedataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet7.xsc">
+      <DependentUpon>onmuhasebedataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet7.xss">
+      <DependentUpon>onmuhasebedataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet8.xsc">
+      <DependentUpon>onmuhasebedataDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet8.xss">
+      <DependentUpon>onmuhasebedataDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet9.xsc">
+      <DependentUpon>onmuhasebedataDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedataDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedataDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedataDataSet9.xss">
+      <DependentUpon>onmuhasebedataDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet.xsc">
+      <DependentUpon>onmuhasebedigerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedigerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedigerDataSet.xss">
+      <DependentUpon>onmuhasebedigerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet1.xsc">
+      <DependentUpon>onmuhasebedigerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedigerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedigerDataSet1.xss">
+      <DependentUpon>onmuhasebedigerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet2.xsc">
+      <DependentUpon>onmuhasebedigerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedigerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedigerDataSet2.xss">
+      <DependentUpon>onmuhasebedigerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet3.xsc">
+      <DependentUpon>onmuhasebedigerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebedigerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebedigerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebedigerDataSet3.xss">
+      <DependentUpon>onmuhasebedigerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet1.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet1.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet10.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet10.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet11.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet11.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet12.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet12.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet13.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet13.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet14.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet14.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet15.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet15.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet16.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet16.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet17.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet17.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet18.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet18.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet19.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet19.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet2.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet2.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet20.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet20.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet21.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet21.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet22.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet22.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet23.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet23.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet24.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet24.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet25.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet25.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet26.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet26.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet27.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet27.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet28.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet28.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet29.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet29.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet3.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet3.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet4.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet4.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet5.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet5.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet6.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet6.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet7.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet7.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet8.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet8.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet9.xsc">
+      <DependentUpon>onmuhasebesmartdataDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onmuhasebesmartdataDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onmuhasebesmartdataDataSet9.xss">
+      <DependentUpon>onmuhasebesmartdataDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet.xsc">
+      <DependentUpon>onumuhasebefirmadataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onumuhasebefirmadataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet.xss">
+      <DependentUpon>onumuhasebefirmadataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet1.xsc">
+      <DependentUpon>onumuhasebefirmadataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onumuhasebefirmadataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet1.xss">
+      <DependentUpon>onumuhasebefirmadataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet2.xsc">
+      <DependentUpon>onumuhasebefirmadataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onumuhasebefirmadataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onumuhasebefirmadataDataSet2.xss">
+      <DependentUpon>onumuhasebefirmadataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="isletmedefteriortakhesaplar.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onmuhasebealissatis.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onmuhasebedata.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onmuhasebediger.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onmuhasebesmartdata.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="onumuhasebefirmadata.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
